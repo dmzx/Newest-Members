@@ -1,0 +1,9 @@
+services:
+    dmzx.newestmembers.listener:
+        class: dmzx\newestmembers\event\listener
+        arguments:
+            - @template
+            - @user
+            - @dbal.conn
+        tags:
+            - { name: event.listener }

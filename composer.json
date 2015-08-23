@@ -1,0 +1,32 @@
+{
+	"name": "dmzx/newestmembers",
+	"type": "phpbb-extension",
+	"description": "This extension shows the newest members instead of only one.",
+	"homepage": "http://www.dmzx-web.net",
+	"version": "1.0.0",
+	"time": "2015-08-20",
+	"keywords": ["phpbb", "extension", "Newest members"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "dmzx",
+			"homepage": "http://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Newest members",
+		"soft-require": {
+			"phpbb/phpbb": "3.1.*"
+		},
+		"version-check": {
+			"host": "www.dmzx-web.net",
+			"directory": "/versions",
+			"filename": "newestmembers_version.json"
+		}
+	}
+}
