@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "This extension shows the newest members instead of only one.",
 	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"time": "2015-08-20",
 	"keywords": ["phpbb", "extension", "Newest members"],
 	"license": "GPL-2.0",

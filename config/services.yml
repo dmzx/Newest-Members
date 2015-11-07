@@ -1,9 +1,14 @@
 services:
+    dmzx.newestmembers.acplistener:
+        class: dmzx\newestmembers\event\acp_listener
+        tags:
+            - { name: event.listener }
     dmzx.newestmembers.listener:
         class: dmzx\newestmembers\event\listener
         arguments:
             - @template
             - @user
             - @dbal.conn
+            - @config
         tags:
             - { name: event.listener }
