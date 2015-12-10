@@ -1,5 +1,7 @@
 # Newest members Extension
 
+[![Build Status](https://travis-ci.org/dmzx/Newest-Members.svg?branch=master)](https://travis-ci.org/dmzx/Newest-Members)
+
 ## Install
 
 1. Download the latest release.
