@@ -7,6 +7,9 @@
 *
 */
 
+/**
+* DO NOT CHANGE
+*/
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -29,12 +32,11 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
-// Some characters for use
+// Some characters you may want to copy&paste:
 // ’ » “ ” …
+//
 
 $lang = array_merge($lang, array(
-
-	// ACP entries
-	'NEWEST_MEMBERS_SETTING'			=> 'Set value for newest members',
-	'NEWEST_MEMBERS_SETTING_EXPLAIN'	=> 'Value adjustable from 2 till 255 members.',
+	'NEWESTMEMBERS_TEXT'	=> 'Unsere <strong>%d</strong> neuesten Mitglieder',
+	'NEWEST_MEMBERS'		=> '%s',
 ));

@@ -33,7 +33,6 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 
 $lang = array_merge($lang, array(
-
 	// ACP entries
 	'NEWEST_MEMBERS_SETTING'			=> 'Set value for newest members',
 	'NEWEST_MEMBERS_SETTING_EXPLAIN'	=> 'Value adjustable from 2 till 255 members.',

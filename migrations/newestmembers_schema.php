@@ -14,7 +14,7 @@ class newestmembers_schema extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return array(
-			// Add configs
+			// Add config
 			array('config.add', array('newestmembers_value', 5)),
 		);
 	}

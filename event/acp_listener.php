@@ -9,9 +9,6 @@
 
 namespace dmzx\newestmembers\event;
 
-/**
-* Event listener
-*/
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class acp_listener implements EventSubscriberInterface
@@ -25,7 +22,6 @@ class acp_listener implements EventSubscriberInterface
 
 	public function add_options($event)
 	{
-		global $user;
 		if (($event['mode'] == 'features' || $event['mode'] == 'load') && isset($event['display_vars']['vars']['load_jumpbox']))
 		{
 			// Store display_vars event in a local variable
@@ -47,7 +43,6 @@ class acp_listener implements EventSubscriberInterface
 	*/
 	function newmems_length($value, $key = '')
 	{
-		global $user;
 		return '<input id="' . $key . '" type="number" size="3" maxlength="3" min="2" max="255" name="config[newestmembers_value]" value="' . $value . '" />';
 	}
 }

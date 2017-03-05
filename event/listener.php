@@ -39,12 +39,17 @@ class listener implements EventSubscriberInterface
 	* @param \phpbb\config\config				$config
 	*
 	*/
-	public function __construct(\phpbb\template\template $template, \phpbb\user $user, \phpbb\db\driver\driver_interface $db, \phpbb\config\config $config)
+	public function __construct(
+		\phpbb\template\template $template,
+		\phpbb\user $user,
+		\phpbb\db\driver\driver_interface $db,
+		\phpbb\config\config $config
+	)
 	{
 		$this->template = $template;
-		$this->user = $user;
-		$this->db = $db;
-		$this->config = $config;
+		$this->user 	= $user;
+		$this->db 		= $db;
+		$this->config 	= $config;
 	}
 
 	static public function getSubscribedEvents()
@@ -63,12 +68,11 @@ class listener implements EventSubscriberInterface
 			FROM ' . USERS_TABLE . '
 			WHERE user_type IN (' . USER_NORMAL . ', ' . USER_FOUNDER . ')
 			ORDER BY user_id DESC';
-
 		$result = $this->db->sql_query_limit($sql, $value);
 
 		if ($result)
 		{
-			while($row = $this->db->sql_fetchrow($result))
+			while ($row = $this->db->sql_fetchrow($result))
 			{
 				$this->template->assign_block_vars('newestmembers', array(
 					'NEWESTMEMBERS'	=> sprintf($this->user->lang['NEWEST_MEMBERS'], get_username_string('full', $row['user_id'], $row['username'], $row['user_colour'])),

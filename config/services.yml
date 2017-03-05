@@ -6,9 +6,9 @@ services:
     dmzx.newestmembers.listener:
         class: dmzx\newestmembers\event\listener
         arguments:
-            - @template
-            - @user
-            - @dbal.conn
-            - @config
+            - '@template'
+            - '@user'
+            - '@dbal.conn'
+            - '@config'
         tags:
             - { name: event.listener }

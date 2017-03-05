@@ -3,9 +3,13 @@
 	"type": "phpbb-extension",
 	"description": "This extension shows the newest members instead of only one.",
 	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.1",
-	"time": "2015-08-20",
-	"keywords": ["phpbb", "extension", "Newest members"],
+	"version": "1.0.2",
+	"time": "2017-01-21",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"Newest members"
+	],
 	"license": "GPL-2.0",
 	"authors": [
 		{
@@ -16,20 +20,18 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
-	},
-	"require-dev": {
-		"phpbb/epv": "dev-master"
+		"php": ">=5.3.3",
+		"phpbb/phpbb": "3.1.*"
 	},
 	"extra": {
 		"display-name": "Newest members",
 		"soft-require": {
-			"phpbb/phpbb": "3.1.*"
+			"phpbb/phpbb": ">=3.1.0,<3.3"
 		},
 		"version-check": {
-			"host": "www.dmzx-web.net",
-			"directory": "/versions",
-			"filename": "newestmembers_version.json"
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/newest_members",
+			"filename": "version_check"
 		}
 	}
 }
