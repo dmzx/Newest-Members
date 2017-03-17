@@ -1,20 +1,20 @@
 <!-- IF NEWEST_USER -->
 <p id="newestmembers-statistics">
-    <!-- EVENT index_body_block_stats_prepend -->
-    {TOTAL_POSTS}
-    <br/>
-    {TOTAL_TOPICS}
-    <br/>
-    {TOTAL_USERS}
-    <br/><br/>
-    {L_NEWESTMEMBERS_TEXT}{L_COLON}
-    <!-- BEGIN newestmembers -->
-        <!-- IF newestmembers.S_ROW_COUNT > 0 -->
-            {L_COMMA_SEPARATOR}
-        <!-- ENDIF -->
-        <strong>{newestmembers.NEWESTMEMBERS}</strong>
-    <!-- END newestmembers -->
-    <!-- EVENT index_body_block_stats_append -->
+	<!-- EVENT index_body_block_stats_prepend -->
+	{TOTAL_POSTS}
+	<br/>
+	{TOTAL_TOPICS}
+	<br/>
+	{TOTAL_USERS}
+	<br/><br/>
+	{L_NEWESTMEMBERS_TEXT}{L_COLON}
+	<!-- BEGIN newestmembers -->
+		<!-- IF newestmembers.S_ROW_COUNT > 0 -->
+			{L_COMMA_SEPARATOR}
+		<!-- ENDIF -->
+		<strong>{newestmembers.NEWESTMEMBERS}</strong>
+	<!-- END newestmembers -->
+	<!-- EVENT index_body_block_stats_append -->
 </p>
 <!-- INCLUDEJS @dmzx_newestmembers/javascript/init.js -->
 <!-- ENDIF -->
